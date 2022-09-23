@@ -37,6 +37,18 @@ namespace PierresBakery.Tests
       //Assert
       Assert.AreEqual(5, result);
     }
+
+    [TestMethod]
+    public void CalcBreadOrderPrice_CalcsPriceForTwoLoaves_Int()
+    {
+      //Arrange
+      int quantity = 2;
+      Bread bread = new Bread(quantity);
+      //Act
+      int result = bread.CalcBreadOrderPrice();
+      //Assert
+      Assert.AreEqual(10, result);
+    }
   }
 
   [TestClass]
