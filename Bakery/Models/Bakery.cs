@@ -22,8 +22,13 @@ namespace PierresBakery
       }
       else
       {
-      // breadCost = (((Bread - (Bread % 3)) * 5) * 2/3) + ((Bread % 3) * 5);
-      price = (((Quantity - (Quantity % 3)) * 5) * 2/3) + ((Quantity %3) * 5);
+        /* 
+        Q = 1 -> p = p * Q                Q = 4 -> p = p * (Q - 1)          Q = 7 -> p = p * (Q - 2)   
+        Q = 2 -> p = p * Q                Q = 5 -> p = p * (Q - 1)          Q = 8 -> p = p * (Q - 2)
+        Q = 3 -> p =(p * Q) - p * 1       Q = 6 -> p = (p * Q) - p * 2      Q = 9 -> p = (p * Q) - p * 3
+
+      //                                                         i =+ 5
+      */                                                  
       } 
       return price;
     }
