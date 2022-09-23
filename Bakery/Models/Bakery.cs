@@ -2,12 +2,21 @@ namespace PierresBakery
 {
   public class Bread
   {
-    // properties, constructors, methods, etc. go here
+    // Properties
+
+    //Constructor
+    public Bread()
+    {
+
+    }
+    //Methods
+
   }
 
   public class Pastry
   {
     // properties, constructors, methods, etc. go here
+    
   }
 
 }
