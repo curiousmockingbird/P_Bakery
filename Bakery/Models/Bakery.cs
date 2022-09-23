@@ -10,7 +10,12 @@ namespace PierresBakery
     {
       Quantity = quantity;
     }
+
     //Methods
+    public int CalcBreadOrderPrice()
+    {
+
+    }
 
   }
 
