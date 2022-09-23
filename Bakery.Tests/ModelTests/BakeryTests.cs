@@ -27,7 +27,7 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public int CalcBreadOrderPrice_CalcsSingleLoafPrice_Int()
+    public void CalcBreadOrderPrice_CalcsSingleLoafPrice_Int()
     {
       //Arrange
       int quantity = 1;
