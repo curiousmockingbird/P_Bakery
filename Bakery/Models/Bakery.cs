@@ -14,7 +14,8 @@ namespace PierresBakery
     //Methods
     public int CalcBreadOrderPrice()
     {
-      
+      int price = 5;
+      return price;
     }
 
   }
