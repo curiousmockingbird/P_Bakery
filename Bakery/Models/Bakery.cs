@@ -3,11 +3,12 @@ namespace PierresBakery
   public class Bread
   {
     // Properties
+    public int Quantity { get; }
 
     //Constructor
-    public Bread()
+    public Bread(int quantity)
     {
-
+      Quantity = quantity;
     }
     //Methods
 
