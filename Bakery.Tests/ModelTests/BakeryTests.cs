@@ -4,8 +4,13 @@ using PierresBakery;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BakeryTests
+  public class BreadTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread bread = new Bread();
+      Assert.AreEqual(typeof(Bread), bread.GetType());
+    }
   }
 }
