@@ -15,6 +15,15 @@ namespace PierresBakery
     public int CalcBreadOrderPrice()
     {
       int price = 5;
+
+      if (Quantity == 2)
+      {
+        price = price * 2;
+      } 
+      else 
+      {
+      return price;
+      }
       return price;
     }
 
