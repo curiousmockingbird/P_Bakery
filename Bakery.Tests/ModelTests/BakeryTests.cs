@@ -32,8 +32,20 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry pastry = new Pastry();
+      Pastry pastry = new Pastry(3);
       Assert.AreEqual(typeof(Pastry), pastry.GetType());
+    }
+
+    [TestMethod]
+    public void SetQuantity_SetsQuantityOfPastryNeeded_Int()
+    {
+      //Arrange
+      int quantity = 3;
+      Pastry pastry = new Pastry(quantity);
+      //Act
+      int result = pastry.Quantity;
+      //Assert
+      Assert.AreEqual(quantity, result);
     }
   }
 }

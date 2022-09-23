@@ -16,7 +16,15 @@ namespace PierresBakery
 
   public class Pastry
   {
-    // properties, constructors, methods, etc. go here
+    // Properties
+    public int Quantity { get; }
+
+    //Constructor
+    public Pastry(int quantity)
+    {
+      Quantity = quantity;
+    }
+    //Methods
     
   }
 
