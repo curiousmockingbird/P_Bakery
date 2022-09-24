@@ -55,12 +55,12 @@ namespace PierresBakery
     public int CalcPastryOrderPrice()
     {
       int price = 2;
-
+      
       if (Quantity == 2)
       {
        price = Quantity * 2;
       }
-
+      
       return price;
     }
   }
