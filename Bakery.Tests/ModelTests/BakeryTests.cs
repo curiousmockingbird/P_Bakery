@@ -121,17 +121,4 @@ namespace PierresBakery.Tests
       Assert.AreEqual(5, result);
     }
   }
-
-  [TestClass]
-  public class OrderTotalTest
-  {
-    [TestMethod]
-    public void OrderTotal_ReturnsTotalPrice_Int()
-    {
-      //Arrange
-      OrderTotal toPay = new OrderTotal();
-      int result = toPay.orderTotal();
-      Assert.AreEqual(7, result);
-    }
-  }
 }
