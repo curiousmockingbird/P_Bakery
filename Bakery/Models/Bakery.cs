@@ -77,4 +77,12 @@ namespace PierresBakery
       return price;
     }
   }
+
+  public class OrderTotal
+  {
+    public int orderTotal()
+    {
+      return 0;
+    }
+  }
 }
