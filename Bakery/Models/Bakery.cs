@@ -22,7 +22,7 @@ namespace PierresBakery
       }
       else
       {
-        
+
         /* 
         Q = 1 -> p = p * Q                Q = 4 -> p = p * (Q - 1)          Q = 7 -> p = p * (Q - 2)   
         Q = 2 -> p = p * Q                Q = 5 -> p = p * (Q - 1)          Q = 8 -> p = p * (Q - 2)
@@ -50,8 +50,12 @@ namespace PierresBakery
     {
       Quantity = quantity;
     }
-    //Methods
-    
-  }
 
+    //Methods
+    public int CalcPastryOrderPrice()
+    {
+      int price = 2;
+      return price;
+    }
+  }
 }
