@@ -61,6 +61,18 @@ namespace PierresBakery.Tests
       //Assert
       Assert.AreEqual(10, result);
     }
+
+    [TestMethod]
+    public void GetTotal_ReturnsTotalOrderPriceForBread_Int()
+    {
+      //Arrange
+      int quantity = 3;
+      Bread bread = new Bread(quantity);
+      //Act
+      int result = bread.TotalPrice;
+      //Assert
+      Assert.AreEqual(10, result);
+    }
   }
 
   [TestClass]
