@@ -16,7 +16,11 @@ namespace PierresBakery
     {
       int price = 5;
 
-      if(Quantity == 2)
+      if ( Quantity == 1)
+      {
+        price = 5;
+      }
+      else if(Quantity == 2)
       {
         price = price * 2;
       }
@@ -29,10 +33,8 @@ namespace PierresBakery
         Q = 3 -> p =(p * Q) - p * 1       Q = 6 -> p = (p * Q) - p * 2      Q = 9 -> p = (p * Q) - p * 3
         */  
       
-        for(int i = 0; i <= Quantity % 3; i++)
-        {
-          price = (price * Quantity) - (price * (Quantity / 3));
-        }
+          price = (price * Quantity) - (price * (Quantity % 3 - ((Quantity % 3) - (Quantity / 3))));
+        
                                 
       } 
       return price;
@@ -61,10 +63,7 @@ namespace PierresBakery
        price = Quantity * 2;
       } else 
       {
-        for(int i = 0; i <= Quantity % 3; i =+ 2)
-        {
-          price = (price * Quantity) - (price * (Quantity / 3));
-        }
+        
       }
 
       return price;
