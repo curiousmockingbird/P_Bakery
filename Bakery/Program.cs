@@ -22,8 +22,8 @@ namespace Bakery
         {
           Console.WriteLine("-----------------------------------------------------------------------------");
           Console.WriteLine("Here's the offer of the day:");
-          Console.WriteLine("Loaf of bread: Buy 2, get 1 free (every 3rd loaf is free.)");
-          Console.WriteLine("Pastry: Get $1 discount every 3rd pastry. Buy 1 for $2, 2 for $4, 3 for $5, etc.");
+          Console.WriteLine("Loaf of bread --> Regular price: $5. Offer: Buy 2, get 1 free (every 3rd loaf is free.)");
+          Console.WriteLine("Pastry        --> Regular price: $2. Offer: Get $1 discount every 3rd pastry. Buy 1 for $2, 2 for $4, 3 for $5, etc.");
 
           bool continueProgram2 = true;
           while(continueProgram2)
@@ -45,13 +45,13 @@ namespace Bakery
 
               Console.WriteLine("-----------------------------------------------------------------------------");
               Console.WriteLine("Here is your order:");
-              Console.WriteLine("You want " + loaves + " loaf/loaves and " + pastries + " Pastries");
+              Console.WriteLine("You want " + loaves + " loaf/loaves and " + pastries + " pastry/ies");
               
               Bread bread = new Bread(loaves);
-              Console.WriteLine("Price for your bread/s: $" + bread.TotalPrice);
+              Console.WriteLine("Subtotal for your loaf/loaves: $" + bread.TotalPrice);
 
               Pastry pastry = new Pastry(pastries);
-              Console.WriteLine("Price for your pastry/ies: $" + pastry.TotalPrice);
+              Console.WriteLine("Subtotal for your pastry/ies: $" + pastry.TotalPrice);
               int total = bread.TotalPrice + pastry.TotalPrice;
 
               Console.WriteLine("Your order's total is: $" + total);
