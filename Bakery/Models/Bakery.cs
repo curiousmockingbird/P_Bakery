@@ -29,7 +29,7 @@ namespace PierresBakery
         Q = 3 -> p =(p * Q) - p * 1       Q = 6 -> p = (p * Q) - p * 2      Q = 9 -> p = (p * Q) - p * 3
         */  
       
-        for(int i = 0; i <= Quantity % 3; i =+ 5)
+        for(int i = 0; i <= Quantity % 3; i++)
         {
           price = (price * Quantity) - (price * (Quantity / 3));
         }
@@ -59,8 +59,14 @@ namespace PierresBakery
       if (Quantity == 2)
       {
        price = Quantity * 2;
+      } else 
+      {
+        for(int i = 0; i <= Quantity % 3; i =+ 2)
+        {
+          price = (price * Quantity) - (price * (Quantity / 3));
+        }
       }
-      
+
       return price;
     }
   }
