@@ -132,5 +132,17 @@ namespace PierresBakery.Tests
       //Assert
       Assert.AreEqual(5, result);
     }
+
+    [TestMethod]
+    public void GetTotal_ReturnsTotalOrderPriceForPastry_Int()
+    {
+      //Arrange
+      int quantity = 3;
+      Pastry pastry = new Pastry(quantity);
+      //Act
+      int result = pastry.TotalPrice;
+      //Assert
+      Assert.AreEqual(5, result);
+    }
   }
 }

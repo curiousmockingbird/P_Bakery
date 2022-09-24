@@ -47,11 +47,15 @@ namespace PierresBakery
   {
     // Properties
     public int Quantity { get; }
+    public int TotalPrice;
+
 
     //Constructor
     public Pastry(int quantity)
     {
       Quantity = quantity;
+      TotalPrice = this.CalcPastryOrderPrice();
+
     }
 
     //Methods
